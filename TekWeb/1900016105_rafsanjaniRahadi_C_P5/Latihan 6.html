@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class = "paragraf"></p>
+    <script>
+        var arr = new Array("zero","one","two");  
+        arr["orange"] = "fruit";  
+        arr["carrot"] = "vegetable";
+        // document.write(arr.join("</br>"))
+        var i = 0;
+        var hasil = "";
+        while (arr[i]){
+            hasil += arr[i] + "</br>";
+            i ++;
+        }
+        document.write(hasil);
+    </script>
+</body>
+</html>

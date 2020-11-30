@@ -1,0 +1,26 @@
+<html>
+<body>
+    <h2>Operasi Penjumlahan</h2>
+    <p> Bilangan 1: </p>
+    <p>
+    <input id="bil1" type="number" >
+    </p>
+    <p>Bilangan 2:</p>
+    <p>
+    <input id=bil2 type="number" >
+    </p>
+    <p id ="hasil">Hasil</p>
+    <input type="button" value ="Tambah"
+    onclick="function hasil() {
+        const bil1 = document.getElementById("bil1").Value;
+        const bil2 = document.getElementById("bil2").Value;
+        const hasilPenjumlahan = document.getElementById("hasil");
+        const hasilAkhir = bil1 + bil2 ;
+        hasilPenjumlahan.innerHTML = hasilAkhir ;
+    }">
+    </input>
+    <script>
+
+    </script>
+</body>
+</html>

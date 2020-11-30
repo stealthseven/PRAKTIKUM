@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="test1">NIM : <input type="text" id="test1"></p>
+        <p class="test2">Nilai : <input type="text" id="test2"></p>
+        <button class="tombol">kirim</button>
+
+        <p>NIM : </p>
+        <div class="hasil_NIM"></div>
+        <p>Nilai : </p>
+        <div class="hasil_nilai"></div>
+    </div>
+
+    <script>
+        const inputNIM = document.querySelector("#test1");
+        const inputNilai = document.querySelector("#test2");
+        const hasilNIM = document.querySelector(".hasil_NIM");
+        const hasilNilai = document.querySelector(".hasil_nilai");
+        $('.tombol').click(function() {
+            let NIM = $(inputNIM).val();
+            let Nilai = $(inputNilai).val();
+            hasilNIM.innerHTML = NIM;
+            hasilNilai.innerHTML = Nilai;
+        });
+        $('.tombol').click(function() {
+            if ($(inputNilai).val() > 65) {
+                alert('Mahasiswa ini dinyatakan lulus');
+            } else {
+                alert('Mahsaiswa tidak lulus');
+            };
+        });
+    </script>
+</body>
+
+</html>

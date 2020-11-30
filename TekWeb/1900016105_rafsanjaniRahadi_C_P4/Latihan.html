@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATIHAN</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        alert('halaman ini selesai di load');
+    const addBtn = document.getElementById('demo');
+        addBtn.innerHTML = "<button>" + "</button>";
+
+    const btn = document.getElementsByTagName('button')[0];
+    btn.style.width = "120px";
+    btn.style.height = "70px";
+    btn.style.backgroundColor = "lightyellow";
+    btn.innerHTML = "klick untuk mengkonversi suhu";
+    btn.addEventListener('click', function() {
+        const suhuCelsius = prompt('masukan suhu dalam celcius, akan di konversi ke Farentheit');
+        const hasil = (suhuCelsius*9/5)+32;
+        addBtn.innerHTML = "hasil dari konversi suhu adalah " + hasil + " F";
+    })
+    </script>
+</body>
+</html>

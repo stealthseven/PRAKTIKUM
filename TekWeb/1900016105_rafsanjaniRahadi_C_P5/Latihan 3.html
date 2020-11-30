@@ -1,0 +1,15 @@
+<html>
+<body>
+<p id="demo">Display the result here.</p>
+<script>
+var greeting;
+var hour = new Date().getHours();
+if (hour < 18) {
+greeting = "Selamat Siang";
+}else{
+greeting = "Selamat sore";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script> 
+</body>
+</html>
