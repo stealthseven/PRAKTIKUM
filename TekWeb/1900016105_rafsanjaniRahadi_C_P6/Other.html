@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#button").click(function() {
+
+                // membuat objek elemen
+                var hasil1 = document.getElementById("Result1");
+                var hasil2 = document.getElementById("Result2");
+                // menampilkan output ke elemen
+                hasil1.innerHTML = $("#NAMA").val();
+                hasil2.innerHTML = $("#UMUR").val();
+
+            })
+        })
+    </script>
+    <style>
+        .nama,
+        .umur {
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>NAMA: <input type="text" id="NAMA"></p>
+        <p>UMUR: <input type="text" id="UMUR"></p>
+
+        <button id="button">kirim</button>
+    </div>
+    <div>
+        <p class="nama">NAMA :</p>
+        <div id="Result1"></div>
+        <p class="umur">USIA :</p>
+        <div id="Result2"></div>
+    </div>
+</body>
+
+</html>
